@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct ResumeView: View {
     var body: some View {
         VStack{
             Image(.pacman)
@@ -60,5 +60,5 @@ func navigationToKontakt (){
 }
 
 #Preview {
-    ContentView()
+    ResumeView()
 }
