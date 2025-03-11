@@ -3,25 +3,7 @@ import SwiftUI
 struct CVView: View {
     var body: some View {
         VStack{
-            Image(.pacman)
-                .resizable()
-                .scaledToFill()
-                .clipped()
-                .ignoresSafeArea()
-                .overlay{
-                    VStack{
-                        Image(.profilePicture)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 290)
-                        
-                        Text("Charles Mariuzza")
-                            .font(.title)
-                            .foregroundColor(.white)
-                    }
-                    .padding(.bottom)
-                }
-            
+            HeaderView()
             VStack{
                 HStack() {
                     Text("Berufserfahrung:")
