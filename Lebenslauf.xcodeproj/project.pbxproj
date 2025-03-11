@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DA648582D8030A600DDFA30 /* CoffeeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA648572D8030A600DDFA30 /* CoffeeMenuView.swift */; };
 		CE75F1EF2C8B1427001AD0A3 /* LebenslaufApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75F1EE2C8B1427001AD0A3 /* LebenslaufApp.swift */; };
 		CE75F1F12C8B1427001AD0A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75F1F02C8B1427001AD0A3 /* ContentView.swift */; };
 		CE75F1F32C8B1428001AD0A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE75F1F22C8B1428001AD0A3 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9DA648572D8030A600DDFA30 /* CoffeeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenuView.swift; sourceTree = "<group>"; };
 		CE75F1EB2C8B1427001AD0A3 /* Lebenslauf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lebenslauf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE75F1EE2C8B1427001AD0A3 /* LebenslaufApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LebenslaufApp.swift; sourceTree = "<group>"; };
 		CE75F1F02C8B1427001AD0A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				CE75F1EE2C8B1427001AD0A3 /* LebenslaufApp.swift */,
 				CE75F1F02C8B1427001AD0A3 /* ContentView.swift */,
+				9DA648572D8030A600DDFA30 /* CoffeeMenuView.swift */,
 				CE75F1F22C8B1428001AD0A3 /* Assets.xcassets */,
 				CE75F1F42C8B1428001AD0A3 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA648582D8030A600DDFA30 /* CoffeeMenuView.swift in Sources */,
 				CE75F1F12C8B1427001AD0A3 /* ContentView.swift in Sources */,
 				CE75F1EF2C8B1427001AD0A3 /* LebenslaufApp.swift in Sources */,
 			);
