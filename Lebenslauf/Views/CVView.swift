@@ -3,30 +3,22 @@ import SwiftUI
 struct CVView: View {
     var body: some View {
         VStack{
-            HeaderView()
-            VStack{
-                HStack() {
-                    Text("Berufserfahrung:")
-                        .font(.headline)
-                    
-                    Spacer()
-                    
-                        Text("Ausbildung Tyre24 \n 2015-2018 \n\n SAITOW AG \n 2018-2019 \n\n C24 \n 2019-2024")
-                            .multilineTextAlignment(.center)
-                            .padding(.trailing, 32)
-                }
-                .padding(.bottom, 5)
-                
-                HStack {
-                    Text("Kenntnnisse:")
-                        .font(.headline)
-                    
-                    Spacer()
-                    
-                    Text("Android Entwicklung \n Java + Kotlin \n Firebase \n Dependency Injection, Junit")
-                        .multilineTextAlignment(.center)
-                }
-            }
+            
+            let personalData = PersonalData(
+                name: "Charles Mariuzza",
+                birthDate: "13.03.1995",
+                telefoneNumber: "0151 64744584",
+                adress: Adress(
+                    street: "Otterbergerstr.",
+                    houseNumber: "46",
+                    zipCode: "67727",
+                    city: "Lohnsfeld"
+                )
+            )
+            
+            HeaderView(personalData: personalData)
+            ExperienceView()
+            
             
             Button("Kontakt", action: navigationToKontakt)
                 .padding(10)
