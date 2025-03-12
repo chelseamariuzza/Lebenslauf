@@ -8,34 +8,36 @@
 import SwiftUI
 
 struct ExperienceView: View {
+
+    let experience: Experience
+
     var body: some View {
-        VStack{
+        VStack {
             HStack {
-                VStack(alignment: .leading) {
-                    Spacer()
-                    Text("Berufserfahrung")
-                        .font(.headline)
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Text("Kenntnnisse")
-                        .font(.headline)
-                    
-                    Spacer()
-                }
+                Text("Position").font(.title)
                 Spacer()
-                VStack(alignment: .center) {
-                    Text("Ausbildung Tyre24 \n 2015-2018 \n\n SAITOW AG \n 2018-2019 \n\n C24 \n 2019-2024")
-                        .multilineTextAlignment(.center)
-                    Spacer()
-                    Text("Android Entwicklung \n Java + Kotlin \n Firebase \n Dependency Injection \n Junit")
-                        .multilineTextAlignment(.center)
-                }
-            }
-        }.padding()
+                Text(experience.title)
+            }.padding()
+            HStack {
+                Text("Zeitraum").font(.title)
+                Spacer()
+                Text("\(experience.begin)" + "-" + "\(experience.end)")
+            }.padding()
+            HStack {
+                Text("Arbeitgeber").font(.title)
+                Spacer()
+                Text(experience.company)
+            }.padding()
+        }
     }
 }
 
 #Preview {
-    ExperienceView()
+    ExperienceView(
+        experience: Experience(
+            title: "Auszubildender Fachinformatiker",
+            company: "Tyre24 GmbH",
+            begin: 2015,
+            end: 2018)
+    )
 }

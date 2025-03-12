@@ -15,32 +15,47 @@ struct CVView: View {
                     city: "Lohnsfeld"
                 )
             )
-            
-            let experience = [
-                Experience(title: "Auszubildender Fachinformatiker", company: "Tyre24 GmbH", begin: 2015, end: 2018),
-                Experience(title: "Software Developer (Junior)", company: "ALZURA AG", begin: 2018, end: 2019),
-                Experience(title: "Software Developer (Professional)", company: "C24 Bank GmbH", begin: 2019, end: 2024)
+
+            let experiences = [
+                Experience(
+                    title: "Auszubildender Fachinformatiker",
+                    company: "Tyre24 GmbH", begin: 2015, end: 2018),
+                Experience(
+                    title: "Software Developer (Junior)", company: "ALZURA AG",
+                    begin: 2018, end: 2019),
+                Experience(
+                    title: "Software Developer (Professional)",
+                    company: "C24 Bank GmbH", begin: 2019, end: 2024),
             ]
-            
+
             let education = [
-                Education(qualification: "Allgemeine Hochschulreife", name: "Willheim-Erb-Gymnasium", begin: 2005, end: 2015),
-                Education(qualification: "Fachinformatiker Anwendungsentwicklung", name: "BBS 1 Technik Kaiserslautern", begin: 2015, end: 2018),
+                Education(
+                    qualification: "Allgemeine Hochschulreife",
+                    name: "Willheim-Erb-Gymnasium", begin: 2005, end: 2015),
+                Education(
+                    qualification: "Fachinformatiker Anwendungsentwicklung",
+                    name: "BBS 1 Technik Kaiserslautern", begin: 2015, end: 2018
+                ),
             ]
-            
+
             HeaderView(personalData: personalData)
-            ExperienceView()
-            
-            
-            Button("Kontakt", action: navigationToKontakt)
-                .padding(10)
-            
+
+            ScrollView {
+                ExperienceView(experience: experiences[0])
+                ExperienceView(experience: experiences[1])
+                ExperienceView(experience: experiences[2])
+                EducationView(education: education[0])
+                EducationView(education: education[1])
+
+                Button("Kontakt", action: navigationToKontakt)
+                    .padding(10)
+
+            }
         }
-        .padding(.leading, 16)
-        .padding(.trailing, 16)
     }
 }
 
-func navigationToKontakt (){
+func navigationToKontakt() {
     //todo
 }
 
