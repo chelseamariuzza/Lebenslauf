@@ -22,6 +22,11 @@ struct CVView: View {
                 Experience(title: "Software Developer (Professional)", company: "C24 Bank GmbH", begin: 2019, end: 2024)
             ]
             
+            let education = [
+                Education(qualification: "Allgemeine Hochschulreife", name: "Willheim-Erb-Gymnasium", begin: 2005, end: 2015),
+                Education(qualification: "Fachinformatiker Anwendungsentwicklung", name: "BBS 1 Technik Kaiserslautern", begin: 2015, end: 2018),
+            ]
+            
             HeaderView(personalData: personalData)
             ExperienceView()
             
