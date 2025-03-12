@@ -17,17 +17,18 @@ struct HeaderView: View {
             .scaledToFill()
             .clipped()
             .ignoresSafeArea()
+            .frame(height: 250)
             .overlay {
                 VStack {
                     Image(.profilePicture)
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 200)
+                        .frame(height: 150)
                     
                     Text("\(personalData.name)")
                         .font(.title)
                         .foregroundColor(.white)
-                    Text("\(personalData.birthDate)")
+                    /*Text("\(personalData.birthDate)")
                         .font(.title2)
                         .foregroundColor(.white)
                     Text("\(personalData.telefoneNumber)")
@@ -48,7 +49,7 @@ struct HeaderView: View {
                         Text("\(personalData.adress.city)")
                             .font(.title2)
                             .foregroundColor(.white)
-                    }
+                    }*/
                 }
                 .padding(.bottom)
             }

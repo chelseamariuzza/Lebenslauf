@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct CVView: View {
+    
+    @State private var showAlert = false
+    
     var body: some View {
         VStack{
             
@@ -15,7 +18,7 @@ struct CVView: View {
                     city: "Lohnsfeld"
                 )
             )
-
+            
             let experiences = [
                 Experience(
                     title: "Auszubildender Fachinformatiker",
@@ -27,7 +30,7 @@ struct CVView: View {
                     title: "Software Developer (Professional)",
                     company: "C24 Bank GmbH", begin: 2019, end: 2024),
             ]
-
+            
             let education = [
                 Education(
                     qualification: "Allgemeine Hochschulreife",
@@ -37,26 +40,27 @@ struct CVView: View {
                     name: "BBS 1 Technik Kaiserslautern", begin: 2015, end: 2018
                 ),
             ]
-
+            
             HeaderView(personalData: personalData)
-
+            
             ScrollView {
                 ExperienceView(experience: experiences[0])
                 ExperienceView(experience: experiences[1])
                 ExperienceView(experience: experiences[2])
                 EducationView(education: education[0])
                 EducationView(education: education[1])
-
-                Button("Kontakt", action: navigationToKontakt)
-                    .padding(10)
-
+                
+                Button("Kontaktieren", systemImage: "phone.fill") {
+                    showAlert = true
+                }
+                .alert("Telefonnummer", isPresented: $showAlert) {
+                    Button("Schließen", role: .cancel) {}
+                } message: {
+                    Text("\(personalData.telefoneNumber)")
+                }
             }
         }
     }
-}
-
-func navigationToKontakt() {
-    //todo
 }
 
 #Preview {
