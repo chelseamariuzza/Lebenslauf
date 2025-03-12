@@ -22,7 +22,7 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9DA6485B2D8048D600DDFA30 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
 		9DA6485D2D8048F500DDFA30 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
-		9DAAC5A92D819E34000A6290 /* CodingChallenges */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CodingChallenges; sourceTree = "<group>"; };
+		9DAB1DF92D81A76300CB7F30 /* CodingChallenges */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CodingChallenges; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,7 @@
 		CE75F1E22C8B1427001AD0A3 = {
 			isa = PBXGroup;
 			children = (
+				9DAB1DF92D81A76300CB7F30 /* CodingChallenges */,
 				CE75F1ED2C8B1427001AD0A3 /* Lebenslauf */,
 				CE75F1EC2C8B1427001AD0A3 /* Products */,
 			);
@@ -55,7 +56,6 @@
 		CE75F1ED2C8B1427001AD0A3 /* Lebenslauf */ = {
 			isa = PBXGroup;
 			children = (
-				9DAAC5A92D819E34000A6290 /* CodingChallenges */,
 				9DA6485D2D8048F500DDFA30 /* Views */,
 				9DA6485B2D8048D600DDFA30 /* Models */,
 				CE75F1EE2C8B1427001AD0A3 /* LebenslaufApp.swift */,
@@ -91,7 +91,6 @@
 			fileSystemSynchronizedGroups = (
 				9DA6485B2D8048D600DDFA30 /* Models */,
 				9DA6485D2D8048F500DDFA30 /* Views */,
-				9DAAC5A92D819E34000A6290 /* CodingChallenges */,
 			);
 			name = Lebenslauf;
 			productName = Lebenslauf;
