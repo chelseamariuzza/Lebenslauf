@@ -15,15 +15,16 @@ struct HeaderView: View {
         Image(.pacman)
             .resizable()
             .scaledToFill()
-            .clipped()
             .ignoresSafeArea()
-            .frame(height: 250)
+            .frame(height: 200)
             .overlay {
                 VStack {
-                    Image(.profilePicture)
+                    Image(.pb)
                         .resizable()
-                        .scaledToFit()
-                        .frame(height: 150)
+                        .scaledToFill()
+                        .frame(width: 165, height: 120)
+                        .clipShape(.circle)
+                        .clipped()
                     
                     Text("\(personalData.name)")
                         .font(.title)
