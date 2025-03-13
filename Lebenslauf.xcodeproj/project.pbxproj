@@ -24,6 +24,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Views/NewsView.swift,
+				Views/SubscribeView.swift,
 			);
 			target = CE75F1EA2C8B1427001AD0A3 /* Lebenslauf */;
 		};
