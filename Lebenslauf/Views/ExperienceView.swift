@@ -12,23 +12,24 @@ struct ExperienceView: View {
     let experience: Experience
 
     var body: some View {
-        VStack {
+        VStack(spacing: 16) {
             HStack {
-                Text("Position").font(.title)
+                Text("Position").font(.title2)
                 Spacer()
-                Text(experience.title)
-            }.padding()
+                Text(experience.title).multilineTextAlignment(.trailing)
+            }.padding(.horizontal)
             HStack {
-                Text("Zeitraum").font(.title)
+                Text("Zeitraum").font(.title2)
                 Spacer()
-                Text("\(experience.begin)" + "-" + "\(experience.end)")
-            }.padding()
+                Text("\(experience.begin)" + "-" + "\(experience.end)").multilineTextAlignment(.trailing)
+            }.padding(.horizontal)
             HStack {
-                Text("Arbeitgeber").font(.title)
+                Text("Arbeitgeber").font(.title2)
                 Spacer()
-                Text(experience.company)
-            }.padding()
+                Text(experience.company).multilineTextAlignment(.trailing)
+            }.padding(.horizontal)
         }
+        Divider()
     }
 }
 

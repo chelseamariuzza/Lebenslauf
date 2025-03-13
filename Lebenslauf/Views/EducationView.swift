@@ -12,24 +12,25 @@ struct EducationView: View {
     let education: Education
     
     var body: some View {
-        VStack {
+        VStack(spacing: 16) {
             HStack {
-                Text("Zeitraum").font(.title)
+                Text("Zeitraum").font(.title2)
                 Spacer()
-                Text("\(education.begin)" + "-" + "\(education.end)")
-            }.padding()
+                Text(verbatim: "\(education.begin) - \(education.end)").multilineTextAlignment(.trailing)
+            }.padding(.horizontal)
             
             HStack {
-                Text("Erworbene Qualification").font(.title)
+                Text("Erworbene Qualifikation").font(.title2)
                 Spacer()
-                Text(education.qualification)
-            }.padding()
+                Text(education.qualification).multilineTextAlignment(.trailing)
+            }.padding(.horizontal)
             
             HStack {
-                Text("Institition").font(.title)
+                Text("Arbeitgeber").font(.title2)
                 Spacer()
-                Text(education.name)
-            }.padding()
+                Text(education.name).multilineTextAlignment(.trailing)
+            }.padding(.horizontal)
+            Divider()
         }
     }
 }

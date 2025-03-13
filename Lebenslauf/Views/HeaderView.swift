@@ -9,66 +9,41 @@ import SwiftUI
 
 struct HeaderView: View {
     
-    let personalData: PersonalData
-    
     var body: some View {
-        Image(.pacman)
-            .resizable()
-            .scaledToFill()
-            .ignoresSafeArea()
-            .frame(height: 200)
-            .overlay {
-                VStack {
-                    Image(.pb)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 165, height: 120)
-                        .clipShape(.circle)
-                        .clipped()
-                    
-                    Text("\(personalData.name)")
-                        .font(.title)
-                        .foregroundColor(.white)
-                    /*Text("\(personalData.birthDate)")
-                        .font(.title2)
-                        .foregroundColor(.white)
-                    Text("\(personalData.telefoneNumber)")
-                        .font(.title2)
-                        .foregroundColor(.white)
-                    HStack {
-                        Text("\(personalData.adress.street)")
-                            .font(.title2)
-                            .foregroundColor(.white)
-                        Text("\(personalData.adress.houseNumber)")
-                            .font(.title2)
-                            .foregroundColor(.white)
-                    }
-                    HStack {
-                        Text("\(personalData.adress.zipCode)")
-                            .font(.title2)
-                            .foregroundColor(.white)
-                        Text("\(personalData.adress.city)")
-                            .font(.title2)
-                            .foregroundColor(.white)
-                    }*/
-                }
-                .padding(.bottom)
+        Image(
+            .pacman
+        )
+        .resizable()
+        .scaledToFill()
+        .ignoresSafeArea()
+        .frame(
+            height: 200
+        )
+        .overlay {
+            VStack {
+                Image(
+                    .pb
+                )
+                .resizable()
+                .scaledToFill()
+                .frame(
+                    width: 165,
+                    height: 120
+                )
+                .clipShape(
+                    .circle
+                )
+                .clipped()
+                
+                Text("Lebenslauf")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
             }
+        }
     }
 }
 
 #Preview {
-    HeaderView(
-        personalData: PersonalData(
-            name: "String",
-            birthDate: "String",
-            telefoneNumber: "String",
-            adress: Adress(
-                street: "String",
-                houseNumber: "String",
-                zipCode: "String",
-                city: "String"
-            )
-        )
-    )
+    HeaderView()
 }
