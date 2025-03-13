@@ -61,14 +61,24 @@ struct CVView: View {
             
             ScrollView {
                 HStack {
-                    Text("Persönliche Daten").font(.title).padding()
+                    Image(systemName: "person.fill")
+                        .padding(.leading)
+                    Text("Persönliche Daten")
+                        .font(.title)
+                        .padding(.trailing)
+                        .padding(.vertical)
                     Spacer()
                 }
                 
                 PersonalDataView(personalData: personalData)
                 
                 HStack {
-                    Text("Berufserfahrung").font(.title).padding()
+                    Image(systemName: "briefcase.fill")
+                        .padding(.leading)
+                    Text("Berufserfahrung")
+                        .font(.title)
+                        .padding(.trailing)
+                        .padding(.vertical)
                     Spacer()
                 }
                 
@@ -77,7 +87,12 @@ struct CVView: View {
                 ExperienceView(experience: experiences[2])
                 
                 HStack {
-                    Text("Schulbildung").font(.title).padding()
+                    Image(systemName: "graduationcap.fill")
+                        .padding(.leading)
+                    Text("Schulbildung")
+                        .font(.title)
+                        .padding(.trailing)
+                        .padding(.vertical)
                     Spacer()
                 }
                 
