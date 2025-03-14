@@ -11,7 +11,6 @@ extension Text {
     func titleSectionText() -> some View {
         self
             .font(.title)
-            .padding(.trailing)
             .padding(.vertical)
     }
 }

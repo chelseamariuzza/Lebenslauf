@@ -26,51 +26,43 @@ struct PersonalDataView: View {
     var body: some View {
         VStack(spacing: 16) {
             HStack {
-                Text("Name")
-                    .font(.title2)
+                Text("Name").font(.title2)
                 Spacer()
                 Text(personalData.name)
-            }.padding(.horizontal)
+            }
             
             HStack {
-                Text( "Anschrift")
-                    .font(.title2)
+                Text( "Anschrift").font(.title2)
                 Spacer()
                 Text(
                     "\(personalData.adress.street) \(personalData.adress.houseNumber) \n \(personalData.adress.zipCode) \(personalData.adress.city)"
                 ).multilineTextAlignment(.trailing)
-            }.padding(.horizontal)
+            }
             
             HStack {
-                Text("Telefon")
-                    .font(.title2)
+                Text("Telefon").font(.title2)
                 Spacer()
                 Text(personalData.telefoneNumber)
-            }.padding(.horizontal)
+            }
             
             HStack {
-                Text("E-mail")
-                    .font(.title2)
+                Text("E-mail").font(.title2)
                 Spacer()
                 Text(personalData.email)
-            }.padding(.horizontal)
+            }
             
             HStack {
-                Text("Staatsangehörigkeit")
-                    .font(.title2)
+                Text("Staatsangehörigkeit").font(.title2)
                 Spacer()
-                Text(personalData.nationality)
-            }.padding(.horizontal)
+                Text(personalData.nationality).multilineTextAlignment(.trailing)
+            }
             
             HStack {
-                Text("Geburtsdatum")
-                    .font(.title2)
+                Text("Geburtsdatum").font(.title2)
                 Spacer()
                 Text(personalData.birthDate)
-            }.padding(.horizontal)
-            
-            Divider()
-        }
+            }
+        }.cardView()
     }
 }
 

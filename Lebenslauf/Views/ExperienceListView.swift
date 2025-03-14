@@ -31,8 +31,10 @@ struct ExperienceListView: View {
             ),
         ]
         
-        ForEach(experiences, id: \.self) { experience in
-            ExperienceView(experience: experience)
+        VStack(spacing: 0) {
+            ForEach(experiences, id: \.self) { experience in
+                ExperienceView(experience: experience)
+            }
         }
     }
 }

@@ -5,11 +5,11 @@ struct CVView: View {
     @State private var showAlert = false
     
     var body: some View {
-        VStack{
+        VStack(spacing: 0){
             // Header mit Profilfoto
             HeaderView()
             
-            ScrollView {
+            ScrollView() {
                 
                 // Persönliche Daten
                 TitleSectionView(titleSectionData: .init(
@@ -40,20 +40,20 @@ struct CVView: View {
                     "Kontaktieren",
                     systemImage: "phone.fill"
                 ) {showAlert = true}
-                .alert(
-                    "Telefonnummer",
-                    isPresented: $showAlert
-                ) {
-                    Button(
-                        "Schließen",
-                        role: .cancel
-                    ) {}
-                } message: {
-                    Text("0151 64744584")
-                }
-                .padding(20)
+                    .alert(
+                        "Telefonnummer",
+                        isPresented: $showAlert
+                    ) {
+                        Button(
+                            "Schließen",
+                            role: .cancel
+                        ) {}
+                    } message: {
+                        Text("0151 64744584")
+                    }
+                    .padding(20)
             }
-        }
+        }.background(Color.gray.opacity(0.1))
     }
 }
 

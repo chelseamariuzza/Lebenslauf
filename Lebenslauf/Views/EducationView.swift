@@ -17,21 +17,20 @@ struct EducationView: View {
                 Text("Zeitraum").font(.title2)
                 Spacer()
                 Text(verbatim: "\(education.begin) - \(education.end)").multilineTextAlignment(.trailing)
-            }.padding(.horizontal)
+            }
             
             HStack {
                 Text("Erworbene Qualifikation").font(.title2)
                 Spacer()
                 Text(education.qualification).multilineTextAlignment(.trailing)
-            }.padding(.horizontal)
+            }
             
             HStack {
                 Text("Arbeitgeber").font(.title2)
                 Spacer()
                 Text(education.name).multilineTextAlignment(.trailing)
-            }.padding(.horizontal)
-            Divider()
-        }
+            }
+        }.cardView()
     }
 }
 

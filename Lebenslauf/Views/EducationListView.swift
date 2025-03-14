@@ -25,8 +25,10 @@ struct EducationListView: View {
             ),
         ]
         
-        ForEach(education, id: \.self) { education in
-            EducationView(education: education)
+        VStack(spacing: 0) {
+            ForEach(education, id: \.self) { education in
+                EducationView(education: education)
+            }
         }
     }
 }
