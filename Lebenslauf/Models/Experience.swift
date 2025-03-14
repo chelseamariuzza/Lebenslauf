@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Experience {
+struct Experience : Hashable {
     let title: String
     let company: String
     let begin: Int

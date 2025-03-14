@@ -9,7 +9,19 @@ import SwiftUI
 
 struct PersonalDataView: View {
     
-    let personalData: PersonalData
+    let personalData = PersonalData(
+        name: "Charles Mariuzza",
+        birthDate: "13.03.1995",
+        telefoneNumber: "0151 64744584",
+        email: "charles@mariuzza.de",
+        nationality: "Deutsch / Amerikanisch",
+        adress: Adress(
+            street: "Otterbergerstr.",
+            houseNumber: "46",
+            zipCode: "67727",
+            city: "Lohnsfeld"
+        )
+    )
     
     var body: some View {
         VStack(spacing: 16) {
@@ -63,19 +75,5 @@ struct PersonalDataView: View {
 }
 
 #Preview {
-    PersonalDataView(
-        personalData: PersonalData(
-            name: "Charles Mariuzza",
-            birthDate: "13.03.1995",
-            telefoneNumber: "015164744584",
-            email: "charles@mariuzza.de",
-            nationality: "Deutsch / Amerikanisch",
-            adress: Adress(
-                street: "Otterbergerstr.",
-                houseNumber: "46",
-                zipCode: "67727",
-                city: "Lohnsfeld"
-            )
-        )
-    )
+    PersonalDataView()
 }

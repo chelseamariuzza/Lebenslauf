@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Education {
+struct Education : Hashable {
     let qualification: String
     let name: String
     let begin: Int
