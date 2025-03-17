@@ -23,6 +23,8 @@
 		9DAB1E1D2D82D16000CB7F30 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Views/ContentView.swift,
+				Views/CountdownView.swift,
 				Views/NewsView.swift,
 				Views/SubscribeView.swift,
 			);
