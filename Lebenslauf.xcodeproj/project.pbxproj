@@ -19,23 +19,10 @@
 		CE75F1F52C8B1428001AD0A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9DAB1E1D2D82D16000CB7F30 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Views/ContentView.swift,
-				Views/CountdownView.swift,
-				Views/NewsView.swift,
-				Views/SubscribeView.swift,
-			);
-			target = CE75F1EA2C8B1427001AD0A3 /* Lebenslauf */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		9D041C512DD47B17001259DB /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
 		9DA6485B2D8048D600DDFA30 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
 		9DA6485D2D8048F500DDFA30 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
-		9DAB1DF92D81A76300CB7F30 /* CodingChallenges */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9DAB1E1D2D82D16000CB7F30 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = CodingChallenges; sourceTree = "<group>"; };
 		9DAB1E3D2D8439F000CB7F30 /* Utils */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Utils; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -53,7 +40,6 @@
 		CE75F1E22C8B1427001AD0A3 = {
 			isa = PBXGroup;
 			children = (
-				9DAB1DF92D81A76300CB7F30 /* CodingChallenges */,
 				CE75F1ED2C8B1427001AD0A3 /* Lebenslauf */,
 				CE75F1EC2C8B1427001AD0A3 /* Products */,
 			);
@@ -70,6 +56,7 @@
 		CE75F1ED2C8B1427001AD0A3 /* Lebenslauf */ = {
 			isa = PBXGroup;
 			children = (
+				9D041C512DD47B17001259DB /* ViewModels */,
 				9DAB1E3D2D8439F000CB7F30 /* Utils */,
 				9DA6485D2D8048F500DDFA30 /* Views */,
 				9DA6485B2D8048D600DDFA30 /* Models */,
@@ -104,6 +91,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				9D041C512DD47B17001259DB /* ViewModels */,
 				9DA6485B2D8048D600DDFA30 /* Models */,
 				9DA6485D2D8048F500DDFA30 /* Views */,
 				9DAB1E3D2D8439F000CB7F30 /* Utils */,
@@ -295,7 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Lebenslauf/Preview Content\"";
 				DEVELOPMENT_TEAM = 2JERCWVGGD;
 				ENABLE_PREVIEWS = YES;
@@ -330,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Lebenslauf/Preview Content\"";
 				DEVELOPMENT_TEAM = 2JERCWVGGD;
 				ENABLE_PREVIEWS = YES;

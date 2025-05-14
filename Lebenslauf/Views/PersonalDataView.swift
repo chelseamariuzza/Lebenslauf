@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PersonalDataView: View {
     
-    let personalData = PersonalData(
+    private let personalData = PersonalData(
         name: "Charles Mariuzza",
         birthDate: "13.03.1995",
         telefoneNumber: "0151 64744584",
