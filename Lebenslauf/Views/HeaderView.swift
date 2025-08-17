@@ -2,7 +2,7 @@
 //  HeaderView.swift
 //  Lebenslauf
 //
-//  Created by Charles Mariuzza on 11.03.25.
+//  Created by Chelsea Mariuzza on 11.03.25.
 //
 
 import SwiftUI
@@ -15,13 +15,13 @@ struct HeaderView: View {
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
-                .frame(height: 200)
+                .frame(height: 250)
                 .overlay {
                     VStack {
                         Image(.pb)
                             .resizable()
                             .scaledToFill()
-                            .frame(width: 165,height: 120)
+                            .frame(width: 165,height: 165)
                             .clipShape(.circle)
                             .clipped()
                         

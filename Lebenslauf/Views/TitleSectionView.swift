@@ -2,7 +2,7 @@
 //  TitleSectionView.swift
 //  Lebenslauf
 //
-//  Created by Charles Mariuzza on 14.03.25.
+//  Created by Chelsea Mariuzza on 14.03.25.
 //
 
 import SwiftUI

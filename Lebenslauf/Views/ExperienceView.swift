@@ -2,7 +2,7 @@
 //  ExperienceView.swift
 //  Lebenslauf
 //
-//  Created by Charles Mariuzza on 11.03.25.
+//  Created by Chelsea Mariuzza on 11.03.25.
 //
 
 import SwiftUI

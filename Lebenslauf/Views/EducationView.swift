@@ -2,7 +2,7 @@
 //  EducationView.swift
 //  Lebenslauf
 //
-//  Created by Charles Mariuzza on 12.03.25.
+//  Created by Chelsea Mariuzza on 12.03.25.
 //
 
 import SwiftUI

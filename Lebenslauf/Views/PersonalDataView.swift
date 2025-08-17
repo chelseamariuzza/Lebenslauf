@@ -2,7 +2,7 @@
 //  PersonalDataView.swift
 //  Lebenslauf
 //
-//  Created by Charles Mariuzza on 13.03.25.
+//  Created by Chelsea Mariuzza on 13.03.25.
 //
 
 import SwiftUI
@@ -10,10 +10,10 @@ import SwiftUI
 struct PersonalDataView: View {
     
     private let personalData = PersonalData(
-        name: "Charles Mariuzza",
+        name: "Chelsea Mariuzza",
         birthDate: "13.03.1995",
         telefoneNumber: "0151 64744584",
-        email: "charles@mariuzza.de",
+        email: "Chelsea@mariuzza.de",
         nationality: "Deutsch / Amerikanisch",
         adress: Adress(
             street: "Otterbergerstr.",

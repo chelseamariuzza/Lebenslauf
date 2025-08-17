@@ -2,7 +2,7 @@
 //  EducationListView.swift
 //  Lebenslauf
 //
-//  Created by Charles Mariuzza on 14.03.25.
+//  Created by Chelsea Mariuzza on 14.03.25.
 //
 
 import SwiftUI
@@ -17,7 +17,7 @@ struct EducationListView: View {
             end: 2015
         ),
         Education(
-            qualification: "Fachinformatiker Anwendungsentwicklung",
+            qualification: "Fachinformatikerin Anwendungsentwicklung",
             name: "BBS 1 Technik Kaiserslautern",
             begin: 2015,
             end: 2018

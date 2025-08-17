@@ -2,7 +2,7 @@
 //  ExperienceListView.swift
 //  Lebenslauf
 //
-//  Created by Charles Mariuzza on 14.03.25.
+//  Created by Chelsea Mariuzza on 14.03.25.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ struct ExperienceListView: View {
     
     private let experiences = [
         Experience(
-            title: "Auszubildender Fachinformatiker",
+            title: "Auszubildende Fachinformatikerin",
             company: "Tyre24 GmbH",
             begin: 2015,
             end: 2018
